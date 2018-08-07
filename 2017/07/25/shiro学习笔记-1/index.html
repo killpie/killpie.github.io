@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="一些废话在我写这篇博文时我大概断断续续学了三四天shiro,期间因为看的不认真的缘故 ，我对shiro一知半解根本算不上系统的学习。在我学习一样东西是我奉行的策略就是边学边做，于是我花了半天的时间模仿着别人写了一个例子，终于对shiro的权限控制流程有了个大致的了解。对于shiro张开涛老师讲的很细致.下面就开始我们的讲解。 shiro简介 Apache Shiroa是一个强大且易用的Java安全">
+<meta name="description" content="一些废话在我写这篇博文时我大概断断续续学了三四天shiro,期间因为看的不认真的缘故 ，我对shiro一知半解根本算不上系统的学习。在我学习一样东西是我奉行的策略就是边学边做，于是我花了半天的时间模仿着别人写了一个例子，终于对shiro的权限控制流程有了个大致的了解。对于shiro张开涛老师讲的很细致.下面就开始我们的讲解。">
 <meta name="keywords" content="shiro">
 <meta property="og:type" content="article">
 <meta property="og:title" content="shiro学习笔记[1]">
 <meta property="og:url" content="http://www.flyfood.name/2017/07/25/shiro学习笔记-1/index.html">
 <meta property="og:site_name" content="飞翔的美食号">
-<meta property="og:description" content="一些废话在我写这篇博文时我大概断断续续学了三四天shiro,期间因为看的不认真的缘故 ，我对shiro一知半解根本算不上系统的学习。在我学习一样东西是我奉行的策略就是边学边做，于是我花了半天的时间模仿着别人写了一个例子，终于对shiro的权限控制流程有了个大致的了解。对于shiro张开涛老师讲的很细致.下面就开始我们的讲解。 shiro简介 Apache Shiroa是一个强大且易用的Java安全">
+<meta property="og:description" content="一些废话在我写这篇博文时我大概断断续续学了三四天shiro,期间因为看的不认真的缘故 ，我对shiro一知半解根本算不上系统的学习。在我学习一样东西是我奉行的策略就是边学边做，于是我花了半天的时间模仿着别人写了一个例子，终于对shiro的权限控制流程有了个大致的了解。对于shiro张开涛老师讲的很细致.下面就开始我们的讲解。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://otfz27j99.bkt.clouddn.com//shiro/d59f6d02-1f45-3285-8983-4ea5f18111d5.png">
-<meta property="og:updated_time" content="2018-07-11T07:20:00.000Z">
+<meta property="og:updated_time" content="2018-08-07T00:28:56.902Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="shiro学习笔记[1]">
-<meta name="twitter:description" content="一些废话在我写这篇博文时我大概断断续续学了三四天shiro,期间因为看的不认真的缘故 ，我对shiro一知半解根本算不上系统的学习。在我学习一样东西是我奉行的策略就是边学边做，于是我花了半天的时间模仿着别人写了一个例子，终于对shiro的权限控制流程有了个大致的了解。对于shiro张开涛老师讲的很细致.下面就开始我们的讲解。 shiro简介 Apache Shiroa是一个强大且易用的Java安全">
+<meta name="twitter:description" content="一些废话在我写这篇博文时我大概断断续续学了三四天shiro,期间因为看的不认真的缘故 ，我对shiro一知半解根本算不上系统的学习。在我学习一样东西是我奉行的策略就是边学边做，于是我花了半天的时间模仿着别人写了一个例子，终于对shiro的权限控制流程有了个大致的了解。对于shiro张开涛老师讲的很细致.下面就开始我们的讲解。">
 <meta name="twitter:image" content="http://otfz27j99.bkt.clouddn.com//shiro/d59f6d02-1f45-3285-8983-4ea5f18111d5.png">
 
 
@@ -386,7 +386,7 @@
       
 
       
-        <h1 id="一些废话"><a href="#一些废话" class="headerlink" title="一些废话"></a>一些废话</h1><p>在我写这篇博文时我大概断断续续学了三四天shiro,期间因为看的不认真的缘故 ，我对shiro一知半解根本算不上系统的学习。在我学习一样东西是我奉行的策略就是边学边做，于是我花了半天的时间模仿着别人写了一个例子，终于对shiro的权限控制流程有了个大致的了解。对于shiro<a href="http://jinnianshilongnian.iteye.com/blog/2018398" target="_blank" rel="noopener">张开涛老师</a>讲的很细致.下面就开始我们的讲解。</p>
+        <h1 id="一些废话"><a href="#一些废话" class="headerlink" title="一些废话"></a>一些废话</h1><p>在我写这篇博文时我大概断断续续学了三四天shiro,期间因为看的不认真的缘故 ，我对shiro一知半解根本算不上系统的学习。在我学习一样东西是我奉行的策略就是边学边做，于是我花了半天的时间模仿着别人写了一个例子，终于对shiro的权限控制流程有了个大致的了解。对于shiro<a href="http://jinnianshilongnian.iteye.com/blog/2018398" target="_blank" rel="noopener">张开涛老师</a>讲的很细致.下面就开始我们的讲解。<br><a id="more"></a></p>
 <h1 id="shiro"><a href="#shiro" class="headerlink" title="shiro"></a>shiro</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
 <p>Apache Shiroa是一个强大且易用的Java安全框架,执行身份验证, 授权、密码学和会话管理。 通过Shiro易于理解的API,您可以 快速、轻松地安全的任何应用程序从最小的移动应用程序最大的网络 和企业应用程序。 </p>
 </blockquote>
@@ -395,9 +395,9 @@
 <li>用户在登录页面输入自己的用户名和密码，然后点击登录。</li>
 <li>服务器在在响应这个请求时开始对用户的信息进行比对，如果比对成功，那么进行下一步</li>
 <li>我们开始给这个用户授权，就是给这个用户分配权限，那些事你可以做那些不可以做</li>
-<li>用户登录成功开始做他能做的事<a id="more"></a>
-一般来说shiro在第二步就开始发挥自己的作用</li>
+<li>用户登录成功开始做他能做的事</li>
 </ol>
+<p>一般来说shiro在第二步就开始发挥自己的作用</p>
 <ul>
 <li><strong>Authentication</strong>：这个英文单词的意思是<strong>身份验证</strong>我们在验证用户的身份时用的就是这个模块</li>
 <li><strong>Authorization</strong>  ：这个是<strong>授权</strong>的意思给用户分配权限</li>
